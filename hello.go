@@ -59,11 +59,12 @@ func iniciarMonitoramento() {
 	fmt.Println(sites)
 
 	for i, sites := range sites {
-		fmt.Println("estou passando na posição", i, "do meu slice e essa posição tem o site", sites)
-
+		fmt.Println("Testando site", i, ":", sites)
+		testasite(sites)
 	}
+}
 
-	site := "https://www.alura.com.br"
+func testasite(site string) {
 	resp, _ := http.Get(site)
 
 	if resp.StatusCode == 200 {
