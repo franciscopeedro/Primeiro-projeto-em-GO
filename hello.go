@@ -12,7 +12,7 @@ import (
 	"time"
 )
 
-const monitoramentos = 2
+const monitoramentos = 3
 const delay = 3
 
 func main() {
