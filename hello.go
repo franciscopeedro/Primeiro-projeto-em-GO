@@ -86,7 +86,6 @@ func testasite(site string) {
 	if err != nil {
 		fmt.Println("Ocorreu um erro!!", err)
 	}
-
 	if resp.StatusCode == 200 {
 		fmt.Println("Site:", site, "foi carregado com sucesso!")
 		registraLog(site, true)
